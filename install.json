@@ -1,0 +1,39 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "./helper.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "blocks": {
+        "title": "Markdown Blocks to Add",
+        "description": "You can also replace content on your page using the 'directly in the location' option of the 'Place the app' dropdown.",
+        "order": 1,
+        "type": "array",
+        "items": {
+          "title": "Markdown Block",
+          "type": "object",
+          "properties": {
+            "location": {
+              "title": "Location",
+              "description": "Where on the page would you like to add your elements?",
+              "type": "object",
+              "format": "element",
+              "order": 1
+            },
+            "code": {
+              "title": "Markdown Code",
+              "type": "string",
+              "format": "markdown",
+              "order": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}
