@@ -7,7 +7,11 @@
     for (var i=0; i < options.blocks.length; i++) {
       var el = Eager.createElement(options.blocks[i].location);
 
-      el.innerHTML = options.blocks[i].code;
+      var code = options.blocks[i].code;
+      if (typeof code == 'string')
+        el.innerHTML = code;
+      else if (typeof code == 'object')
+        el.innerHTML = code.html;
     }
   }
 
