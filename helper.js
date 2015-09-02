@@ -4,7 +4,7 @@
   var options = INSTALL_OPTIONS;
 
   var add = function(){
-    for (var i=0; i < options.blocks.length; i++) {
+    for (var i = 0; i < options.blocks.length; i++) {
       var el = Eager.createElement(options.blocks[i].location);
 
       var code = options.blocks[i].code;
@@ -13,10 +13,10 @@
       else if (typeof code == 'object')
         el.innerHTML = code.html;
     }
-  }
+  };
 
   if (document.readyState == 'loading')
     document.addEventListener('DOMContentLoaded', add);
   else
     add();
-})()
+})();
