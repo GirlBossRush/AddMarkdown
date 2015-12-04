@@ -18,8 +18,8 @@
   "options": {
     "properties": {
       "blocks": {
-        "title": "Markdown Blocks to Add",
-        "description": "You can also replace content on your page using the 'directly in the location' option of the 'Place the app' dropdown.",
+        "title": "Markdown blocks to add",
+        "description": "You can also replace a part of your page by setting: “Place it in the location (replace it).”",
         "order": 1,
         "type": "array",
         "items": {
@@ -27,17 +27,17 @@
           "type": "object",
           "properties": {
             "location": {
+              "order": 1,
               "title": "Location",
               "description": "Where on the page would you like to add your elements?",
               "type": "object",
-              "format": "element",
-              "order": 1
+              "format": "element"
             },
             "code": {
-              "title": "Markdown Code",
+              "order": 2,
+              "title": "Markdown code",
               "type": "string",
-              "format": "markdown",
-              "order": 2
+              "format": "markdown"
             }
           }
         }
