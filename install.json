@@ -17,6 +17,12 @@
   },
   "options": {
     "properties": {
+      "foobar": {
+        "order": 0,
+        "title": "Richer!",
+        "type": "string",
+        "format": "richtext"
+      },
       "blocks": {
         "title": "Markdown blocks to add",
         "description": "You can also replace a part of your page by setting: “Place it in the location (replace it).”",

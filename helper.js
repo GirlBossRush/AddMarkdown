@@ -7,9 +7,11 @@
   var prevElements = {};
 
   var add = function(){
+    console.log(options.foobar)
     for (var i = 0; i < options.blocks.length; i++) {
       var block = options.blocks[i];
       var locationHash = block.location.selector + "!" + block.location.method;
+
 
       if (elements[locationHash]){
         var el = elements[locationHash];
