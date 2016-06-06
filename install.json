@@ -27,17 +27,27 @@
           "type": "object",
           "properties": {
             "location": {
-              "order": 1,
+              "order": 2,
               "title": "Location",
               "description": "Where on the page would you like to add your elements?",
               "type": "object",
-              "format": "element"
+              "format": "element",
+              "default": {
+                "selector": "body",
+                "method": "prepend"
+              }
             },
             "code": {
-              "order": 2,
+              "order": 0,
               "title": "Markdown code",
               "type": "string",
               "format": "markdown"
+            },
+            "rich": {
+              "order": 1,
+              "title": "Richtext",
+              "type": "string",
+              "format": "richtext"
             }
           }
         }
