@@ -17,17 +17,26 @@
   },
   "options": {
     "properties": {
-      "foobar": {
+      "richtest": {
         "order": 0,
-        "title": "Richer!",
+        "title": "Rich text field!",
         "type": "string",
         "format": "richtext",
-        "placeholder": "Begin typing..."
+        "placeholder": "Begin typing...",
+        "maximum": 500
+      },
+      "richtest": {
+        "order": 1,
+        "title": "Markdown text field!",
+        "type": "string",
+        "format": "markdown",
+        "placeholder": "Begin typing...",
+        "maximum": 500
       },
       "blocks": {
         "title": "Markdown blocks to add",
         "description": "You can also replace a part of your page by setting: “Place it in the location (replace it).”",
-        "order": 1,
+        "order": 2,
         "type": "array",
         "items": {
           "title": "Markdown Block",
