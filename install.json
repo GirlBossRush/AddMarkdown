@@ -21,7 +21,8 @@
         "order": 0,
         "title": "Richer!",
         "type": "string",
-        "format": "richtext"
+        "format": "richtext",
+        "placeholder": "Begin typing..."
       },
       "blocks": {
         "title": "Markdown blocks to add",
