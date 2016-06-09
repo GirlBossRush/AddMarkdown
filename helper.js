@@ -7,7 +7,7 @@
   var prevElements = {};
 
   var add = function(){
-    console.log(options.foobar)
+    console.log(options.richtextTest)
     for (var i = 0; i < options.blocks.length; i++) {
       var block = options.blocks[i];
       var locationHash = block.location.selector + "!" + block.location.method;

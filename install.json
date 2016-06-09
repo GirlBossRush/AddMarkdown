@@ -17,7 +17,7 @@
   },
   "options": {
     "properties": {
-      "richtest": {
+      "richtextTest": {
         "order": 0,
         "title": "Rich text field!",
         "type": "string",
@@ -25,7 +25,7 @@
         "placeholder": "Begin typing...",
         "maximum": 500
       },
-      "richtest": {
+      "markdownTest": {
         "order": 1,
         "title": "Markdown text field!",
         "type": "string",
